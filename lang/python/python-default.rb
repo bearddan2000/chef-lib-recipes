@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-package 'firefox'
+package 'python'
