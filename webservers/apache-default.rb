@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 
-package 'apahe2'
+package 'apache2'
