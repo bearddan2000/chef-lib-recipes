@@ -1,9 +1,13 @@
 #!/usr/bin/env ruby
 
-apt_package 'mono-complete' do
-  action :install
+package 'apt-transport-https'
+package 'dirmngr'
+package 'gpg-agent'
+package 'software-properties-common'
+
+execute 'apt-update' do
+  command 'sudo apt-get update --fix-missing'
 end
 
-apt_package 'mono-vbnc' do
-  action :install
-end
+package 'mono-complete'
+package 'mono-vbnc'
