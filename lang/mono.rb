@@ -1,3 +1,9 @@
 #!/usr/bin/env ruby
 
-package 'mono'
+apt_package 'mono-complete' do
+  action :install
+end
+
+apt_package 'mono-vbnc' do
+  action :install
+end
